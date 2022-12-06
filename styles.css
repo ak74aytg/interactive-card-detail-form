@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'grotesk';
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    border-color:  hsl(249, 99%, 64%)!important;
+    box-shadow: 0 0 5px  hsl(249, 99%, 64%);
+}
+
+.attribution{
+    position: absolute !important;
+    top: 100% !important;
+    margin-left: 40% !important;
+    margin-right: auto !important;
+}
+
+
+
+.hidden{
+    display: none!important;
+}
+
+body{
+    background-image: url('./images/bg-main-desktop.png');
+    background-size:  30vw 100vh;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    font-family: 'grotesk'!important;
+    font-size: 18px!important;
+    font-weight: 500!important;
+    /* background-position: center; */
+    background-color: rgba(254, 254, 254, 0.1)!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    /* align-items: center; */
+
+}
+
+.front{
+    /* position: relative; */
+    /* top: 6rem; */
+    margin-left: 10vw!important;
+    margin-top: 12vh;
+    /* left: 8rem; */
+    background-color: transparent!important;
+    background-image: url('./images/bg-card-front.png');
+    background-size: contain;
+    width: 24rem!important;
+    height: 13rem!important;
+    background-repeat: no-repeat;
+
+    /* border: 2px black solid; */
+}
+
+
+
+.back{
+    /* position: relative;
+    top: 7rem;
+    left: 14rem; */
+    margin-left: 16vw!important;
+    margin-top: 8vh!important;
+    background-color: transparent!important;
+    background-image: url('./images/bg-card-back.png');
+    background-size: contain;
+    width: 24rem !important;;
+    height: 13rem!important;
+    background-repeat: no-repeat;
+    border: 1px transparent solid!important;
+    box-shadow: 13px!important;
+}
+
+.detail{
+    width: 26rem!important;
+    margin-top: -25rem!important;
+    /* margin-left: 46rem!important; */
+    margin-right: 10vw!important;
+}
+
+.white{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -7%!important;
+    margin-left: 3%!important;
+}
+.none{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: calc(-1rem + 2px) !important;
+    margin-left: 1rem!important;
+}
+
+.atm{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+.atmName{
+    /* font-size: 15px; */
+    margin-left: 1rem!important;
+}
+
+
+.id{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text{
+    color: white;
+    margin-top: calc(4rem + 6px);
+    margin-left: 17rem;
+    font-size: 15px;
+}
+
+.form-label{
+    font-size: small;
+    font-weight: 600;
+}
+
+.form-text{
+    font-size: 12px;
+    color: hsl(0, 100%, 66%);
+    font-weight: 600;
+}
+
+.btn{
+    background-color:  hsl(278, 68%, 11%);
+    color: white;
+}
+
+.mm{
+    padding-right: 5px !important;
+}
+.yy{
+    padding-left: 5px !important;
+}
+
+.check{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:  hsl(278deg 64% 43%);
+    margin-left: 1rem;
+}
+.success{
+    margin-top: -25rem!important;
+    margin-left: 50rem!important;
+    margin-right: 1rem!important;
+    display: flex;
+    width: 300px!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+} 
+
+.fa{
+    color: white;
+    font-size: 30px;
+    margin-top: calc(1rem  + 9px);
+    margin-left: calc(1rem  + 8px);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .detail{
+        /* margin-left: 59vw!important; */
+        margin-right: 5vw!important;
+    }
+    .success{
+        margin-right: 5vw!important;
+    }
+    .front{
+        margin-left: 7vw !important;
+    }
+    .back{
+        margin-left: 11vw !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .front{
+        margin-left: 2vw !important;
+    }
+    .back{
+        margin-left: 7vw !important;
+    }
+    .detail{
+        margin-right: 1vw !important;
+    }
+    .success{
+        margin-right: 1vw !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .attribution{
+        position: relative !important;
+        margin-left: 30vw !important;
+    }
+    body{
+        background-image: url('./images/bg-main-mobile.png');
+        background-size: contain;
+        background-repeat: repeat-x;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .front{
+        margin-top: 30vw !important;
+        z-index: 100;
+    }
+    .back{
+        position: relative !important;
+        top: -31vw !important;
+        right: -45vw !important;
+        /* margin-top: -71vw !important;
+        margin-left: 0 !important;
+        margin-right: 10vw !important ; */
+    }
+    .detail{
+        margin-top: -18vw !important;
+        margin-right: auto !important;
+        margin-left: 20vw !important;
+        margin-bottom: 30vh !important;
+        /* padding-bottom: 30vh !important; */
+    }
+    .success{
+        margin-top: -18vw !important;
+        margin-right: auto !important;
+        margin-left: 32vw !important;
+        margin-bottom: 30vh !important;
+        /* padding-bottom: 30vh !important; */
+    }
+}
